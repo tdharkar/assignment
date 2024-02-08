@@ -1,6 +1,6 @@
-FROM python:alpine3.7
+FROM python:3-alpine3.7
 COPY . /app
 WORKDIR /app
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 EXPOSE 5050
-CMD python ./index.py
+CMD python3 ./index.py
