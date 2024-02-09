@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-world
+  name: hello-world-python
 spec:
   containers:
-  - name: hello-world
-    image: hello-world
+  - name: hello-world-python
+    image: tdharkar/pythonapp:tagname
     ports:
     - containerPort: 5050
     resources:
